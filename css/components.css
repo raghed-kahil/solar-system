@@ -42,7 +42,7 @@
 
 
 #carousel-solar-system {
-    background-image: linear-gradient(to left, #0007, #0007), url('/assets/images/solar-system.jpg');
+    background-image: linear-gradient(to left, #0007, #0007), url('../assets/images/solar-system.jpg');
     background-size: -100%;
     background-position: right;
     background-size: cover;
