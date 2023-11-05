@@ -1,0 +1,17 @@
+@import url('utils.css');
+@import url('components.css');
+
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root, body {
+    margin: 0;
+    padding: 0;
+    color-scheme: dark;
+    background-color: black;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}

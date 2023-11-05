@@ -1,0 +1,71 @@
+.planets-carousel {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.landing-carousel-item {
+    width: 100vw;
+    padding: 2rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.landing-carousel-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 1rem;
+}
+.landing-carousel-dots .dot {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.landing-carousel-dots .dot:active {
+    background-color: white;
+}
+.landing-carousel-dots .dot::before {
+    content: '';
+}
+
+
+#carousel-solar-system {
+    background-image: linear-gradient(to left, #0007, #0007), url('/assets/images/solar-system.jpg');
+    background-size: -100%;
+    background-position: right;
+    background-size: cover;
+}
+
+/* btns */
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    
+    font-size: larger;
+    
+    cursor: pointer;
+}
+
+.btn-outline {
+    transition: background-color 100ms linear;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: black;
+}

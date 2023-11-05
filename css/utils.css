@@ -1,0 +1,30 @@
+.h-screen {
+    height: 100vh;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+/* margins */
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+
+.float-r {
+    float: right;
+}
+
+.overfloaw-hidden {
+    overflow: hidden;
+}
+
+.text-xl {
+    font-size: 4rem;
+}
+
+.flex {
+    display: flex;
+}
