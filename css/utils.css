@@ -8,8 +8,20 @@
 
 /* margins */
 
+.mx-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .mb-2 {
     margin-bottom: 1rem;
+}
+
+
+/* padding */
+
+.p-2 {
+    padding: 1rem;
 }
 
 
@@ -17,8 +29,23 @@
     float: right;
 }
 
-.overfloaw-hidden {
+.overflow-x {
+    overflow: auto;
+}
+
+.overflow-hidden {
     overflow: hidden;
+}
+
+
+/* text */
+
+.text-center {
+    text-align: center;
+}
+
+.text-lg {
+    font-size: 2rem;
 }
 
 .text-xl {
