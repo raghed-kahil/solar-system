@@ -49,16 +49,31 @@
 
 #carousel-earth {
     background-image: linear-gradient(to left, #0007, #0007), url('../assets/images/earth.jpg');
-    background-position: right;
+    background-position: center;
     background-size: contain;
 }
 
 #carousel-saturn {
     background-image: linear-gradient(to left, #0007, #0007), url('../assets/images/saturn.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+@media (min-width: 900px) {
+#carousel-earth {
+    background-image: url('../assets/images/earth.jpg');
     background-position: right;
     background-size: contain;
 }
 
+#carousel-saturn {
+    background-image: url('../assets/images/saturn.jpg');
+    background-position: right;
+    background-size: contain;
+}
+
+
+}
 
 .planets-list {
     display: flex;
