@@ -2,19 +2,28 @@
 <html lang="en">
 
 <head>
+    <meta property="og:title" content="Solar system">
+    <meta property="og:description" content="Solar system website using html+js+css">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/earth.jpg">
+    <meta property="og:url" content="https://github.com/raghed-kahil/solar-system" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" as="image" href="assets/images/solar-system.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Solar system</title>
+
+    <script src="main.js" defer async></script>
 </head>
 
 <body>
     <!-- Hero -->
-    <section class="h-screen w-screen overflow-hidden">
+    <section id="carousel-scroll-container" class="h-screen w-screen overflow-hidden">
         <div class="planets-carousel">
             <div id="carousel-solar-system" class="landing-carousel-item">
-                <div>
+                <div >
                     <div class="text-xl">Solar system</div>
                     <div class="mb-2 text-lg">Gain useful information about aur lovely solar system</div>
                     <a href="#planets" class="btn btn-outline">Learn more</a>
@@ -32,7 +41,7 @@
             </div>
         </div>
         <div class="landing-carousel-dots">
-            <a class="dot" href="#carousel-solar-system" title="Solar system"></a>
+            <a class="dot active" href="#carousel-solar-system" title="Solar system"></a>
             <a class="dot" href="#carousel-earth" title="Earth"></a>
             <a class="dot" href="#carousel-saturn" title="Saturn"></a>
         </div>
@@ -43,31 +52,79 @@
     <p class="text-lg text-center">Discover different planets in solar system</p>
         <div class="mx-2 overflow-x">
             <ul class="planets-list">
-                <li class="planet-card">
-                    <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
-                    <div class="text-center text-lg">
-                        <a href="">Earth</a>
+                <li class="planet-li">
+                    <div class="planet-card">
+                        <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
+                        <div class="text-center text-lg">
+                            <a href="">Earth</a>
+                        </div>
                     </div>
                 </li>
-                <li class="planet-card">
-                    <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
-                    <div class="text-center text-lg">
-                        <a href="">Earth</a>
+                <li class="planet-li">
+                    <div class="planet-card">
+                        <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
+                        <div class="text-center text-lg">
+                            <a href="">Earth</a>
+                        </div>
                     </div>
-                </li>
-                <li class="planet-card">
-                    <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
-                    <div class="text-center text-lg">
-                        <a href="">Earth</a>
+                </li><li class="planet-li">
+                    <div class="planet-card">
+                        <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
+                        <div class="text-center text-lg">
+                            <a href="">Earth</a>
+                        </div>
+                    </div>
+                </li><li class="planet-li">
+                    <div class="planet-card">
+                        <img class="planet-card-img mb-2" src="assets/images/earth.jpg" alt="">
+                        <div class="text-center text-lg">
+                            <a href="">Earth</a>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="h-screen">
-
-    </section>
+    <footer class="footer p-2 bg-base-2 flex">
+        <!-- newsletter -->
+        <form action="" method="post" class="newsletter">
+            <h2>Subscribe to our news letter</h2>
+            <input class="newsletter-email" type="email" placeholder="Email..." name="email">
+            <button class="newsletter-submit float-r" type="submit">Subscribe</button>
+        </form> 
+        <div class="divider"></div>
+        <!-- social -->
+        <div class="p-2 flex-1 flex flex-col">
+            <h2>
+                Contact us
+            </h2>
+            <div class="">
+                <p>
+                    Phone: <a href="tel:+963987654321"><bdi>+963 987 654 321</bdi></a>
+                </p>
+                <p>
+                    Email: <a href="mailto:kahilraghed@gmail.com"><bdi>kahilraghed@gmail.com</bdi></a>
+                </p>
+                
+            </div>
+            <div class="flex gap-2">
+                <a class="text-md" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="text-md" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="text-md" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a class="text-md" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="text-md" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="flex-1 p-2">
+            <h2>Links</h2>
+            <a class="block mb-1" href="#">Privacy policy</a>
+            <a class="block mb-1" href="#">About us</a>
+            <a class="block mb-1" href="#">Terms of use</a>
+            <a class="block mb-1" href="#">Cookie policy</a>
+        </div>
+    </footer>
 </body>
 
 </html>

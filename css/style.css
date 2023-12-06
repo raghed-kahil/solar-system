@@ -5,6 +5,7 @@
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    --c-base-2: #222;
 }
 
 :root, body {
@@ -25,4 +26,8 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+button {
+    cursor: pointer;
 }

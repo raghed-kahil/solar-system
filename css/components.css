@@ -33,6 +33,12 @@
     background-color: transparent;
     border: 2px solid white;
 }
+
+.landing-carousel-dots .dot.active {
+    background: white;
+}
+
+
 .landing-carousel-dots .dot:active {
     background-color: white;
 }
@@ -42,7 +48,9 @@
 
 
 #carousel-solar-system {
-    background-image: linear-gradient(to left, #0007, #0007), url('../assets/images/solar-system.jpg');
+    background-image: 
+    linear-gradient(to left, #0007, #0007), 
+    url('../assets/images/solar-system.jpg');
     background-position: right;
     background-size: cover;
 }
@@ -77,15 +85,28 @@
 
 .planets-list {
     display: flex;
+    align-items: start;
     column-gap: 2rem;
+}
+
+.planet-li {
+    transition: padding 100ms linear;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.planet-li:hover {
+    padding-top: 0;
+    padding-bottom: 2rem;
 }
 
 .planet-card {
     padding: 2rem;
     flex-shrink: 0;
     width: 16rem;
-    background-color: #222;
+    background-color: var(--c-base-2);
 }
+
 
 .planet-card-img {
     width: 100%;
@@ -113,11 +134,47 @@
     background-color: white;
     color: black;
 }
-
 /* hero */
 
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.newsletter-email {
+    padding: 0.5rem;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+.newsletter-email:focus, .newsletter-email:focus-visible {
+    outline: none;
+}
+
+.newsletter-submit{
+    padding: 1rem 2rem;
+    font-weight: 500;
+    align-self: center;
+}
+
+.footer {
+    min-height: 13rem;
+    align-items: stretch;
+}
+
+.footer .divider {
+    border-left: 1px #555;
+    border-left-style: solid;
+    width: 0;
 }

@@ -1,3 +1,5 @@
+
+
 .min-h-screen {
     min-height: 100vh;
 }
@@ -17,6 +19,10 @@
     margin-right: 1rem;
 }
 
+.mb-1 {
+    margin-bottom: 0.2rem;
+}
+
 .mb-2 {
     margin-bottom: 1rem;
 }
@@ -27,10 +33,20 @@
 .p-2 {
     padding: 1rem;
 }
+.py-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 
 .float-r {
     float: right;
+}
+
+/* bg */
+
+.bg-base-2 {
+    background-color: var(--c-base-2);
 }
 
 .overflow-x {
@@ -48,6 +64,10 @@
     text-align: center;
 }
 
+.text-md {
+    font-size: 1.5rem;
+}
+
 .text-lg {
     font-size: 2rem;
 }
@@ -56,6 +76,37 @@
     font-size: 4rem;
 }
 
+.block {
+    display: block;
+}
+
 .flex {
     display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
 }
