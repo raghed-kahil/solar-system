@@ -104,12 +104,17 @@
     padding: 2rem;
     flex-shrink: 0;
     width: 16rem;
+    height: 20rem;
     background-color: var(--c-base-2);
 }
 
 
 .planet-card-img {
-    width: 100%;
+    width: 12rem;
+    height: 12rem;
+    background-color: black;
+    object-fit: contain;
+
     border: 1px solid white;
 }
 
@@ -142,6 +147,32 @@
     justify-content: center;
 }
 
+
+.footer {
+    min-height: 13rem;
+    align-items: stretch;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter {
+        align-items: center !important;
+    }
+
+    .contact-icons {
+        justify-content: center;
+    }
+
+    .footer .divider {
+        flex: 1;
+    }
+}
+
 .newsletter {
     display: flex;
     flex-direction: column;
@@ -153,9 +184,9 @@
 .newsletter-email {
     padding: 0.5rem;
     height: 3rem;
+    min-width: 14rem;
     width: 100%;
     font-size: 1rem;
-
 }
 
 .newsletter-email:focus, .newsletter-email:focus-visible {
@@ -163,18 +194,14 @@
 }
 
 .newsletter-submit{
+    height: 3rem;
     padding: 1rem 2rem;
     font-weight: 500;
     align-self: center;
 }
 
-.footer {
-    min-height: 13rem;
-    align-items: stretch;
-}
-
 .footer .divider {
-    border-left: 1px #555;
-    border-left-style: solid;
-    width: 0;
+    border: 1px #555;
+    border-style: solid;
+    /* width: 0; */
 }

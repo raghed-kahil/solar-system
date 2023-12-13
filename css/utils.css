@@ -84,6 +84,14 @@
     display: flex;
 }
 
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .flex-col {
     flex-direction: column;
 }
