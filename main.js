@@ -1,4 +1,4 @@
-
+// best comment for best teacher
 
 var carouselItems = document.querySelectorAll('.landing-carousel-item');
 var carouselDots = document.querySelectorAll('.landing-carousel-dots>.dot');
@@ -14,7 +14,7 @@ function scrollToCarouselItem(i) {
     })
     currentItem = i;
 }
-
+// assign event listiners
 carouselDots.forEach((dot, i) => {
     dot.addEventListener('click', ev => {
         ev.preventDefault();
@@ -22,6 +22,7 @@ carouselDots.forEach((dot, i) => {
     })
 })
 
+// auto scroll
 setInterval(() => {
     scrollToCarouselItem((currentItem + 1) % carouselItems.length)
 }, 2500);
